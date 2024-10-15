@@ -1,0 +1,24 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@quacker/navigation/util": ["libs/navigation/util/src/index.ts"],
+      "@quacker/ui": ["libs/shared/design-system/ui/src/index.ts"],
+      "src/*": ["apps/quacker-frontend/src/app/*"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
